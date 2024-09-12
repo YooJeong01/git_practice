@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/nav.css">
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="/images/icons8-stock-100.png" class="logo" alt="">
+      <h3 class="hide">2SENTI</h3>
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" class="active" data-active="0">
+            <div class="icon">
+              <i class='bx bx-tachometer'></i>
+              <i class='bx bxs-tachometer'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="/news.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Articles</span>
+          </a>
+        </li>
+        <!-- <li class="tooltip-element" data-tooltip="2">
+          <a href="#" data-active="2">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Messages</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Analytics</span>
+          </a>
+        </li> -->
+        <div class="tooltip">
+          <span class="show">Dashboard</span>
+          <span>Articles</span>
+          <!-- <span>Messages</span>
+          <span>Analytics</span> -->
+        </div>
+      </ul>
+
+      <h4 class="hide">Shortcuts</h4>
+      <ul>
+        <!-- <li class="tooltip-element" data-tooltip="0">
+          <a href="#" data-active="4">
+            <div class="icon">
+              <i class='bx bx-notepad'></i>
+              <i class='bx bxs-notepad'></i>
+            </div>
+            <span class="link hide">Tasks</span>
+          </a>
+        </li> -->
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class='bx bx-help-circle'></i>
+              <i class='bx bxs-help-circle'></i>
+            </div>
+            <span class="link hide">Help</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="4">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+              <i class='bx bxs-cog'></i>
+            </div>
+            <span class="link hide">Settings</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <!-- <span class="show">Tasks</span> -->
+          <span class="show">Help</span>
+          <span>Settings</span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <img src="/images/woman_145893.png" alt="">
+          <div class="admin-info">
+            <h3>John Doe</h3>
+            <h5>Admin</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">John Doe</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <h1>My Dashboard</h1>
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Quick Search ...">
+    </div>
+    <div class="card">
+        <h2>Sentimental</h2>
+        <div class="pulse"></div>
+        <div class="chart-area">
+            <div class="grid"></div>
+        </div>
+    </div>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur animi voluptatibus cum maxime distinctio
+      iste quod deleniti eius, autem voluptates cumque suscipit iure quasi eligendi ullam. Sapiente eligendi porro
+      reprehenderit corrupti error facilis quo, fugiat fugit? Maiores aliquam ad, molestiae iste nihil, commodi
+      doloremque tempore excepturi aut id ducimus unde?
+    </p>
+    <div class="articleList">
+      <h1>Article</h1>
+      <ul>
+          <li>
+              <a href="#">
+                  <div class="article article1">
+                      <div>파이낸셜 뉴스</div>
+                      <div>삼양·농심 등 K푸드 기대주에 투자 … 3개월 수익률 37.21% ```</div>
+                      <div>2024. 7. 14 오후 6:47:00</div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <div class="article article2">
+                      <div>파이낸셜 뉴스</div>
+                      <div>금값 랠리, 사상 최고가 경신 눈앞</div>
+                      <div>2024. 7. 14 오후 6:43:00</div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <div class="article article3">
+                      <div>매일경제</div>
+                      <div>내년 복수거래소 시대 앞두고 '코스콤 자동주문전송' 도입 늘어</div>
+                      <div>2024. 7. 14 오후 5:31:00</div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <div class="article article4">
+                      <div>삼성전자</div>
+                      <div>2024년 1분기 실적 발표 영업 이익</div>
+                      <div>2024. 7. 14 오후 5:24:12</div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <div class="article article5">
+                      <div>한국경제</div>
+                      <div>TDF 전성시대…8년 만에 163배 성장</div>
+                      <div>2024. 7. 14 오후 5:21:00</div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <div class="article article6">
+                      <div>연합뉴스</div>
+                      <div>"해외주식이 먹여살렸네" 5대 증권사 2분기 순이익 1조원 육박</div>
+                      <div>2024. 7. 14 오전 6:30:00</div>
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <div class="article article7">
+                      <div>파이낸셜 뉴스</div>
+                      <div>중소형 증권사, 부동산금융 고위험 사업장 비중 높아</div>
+                      <div>2024. 7. 13 오전 6:40:00</div>
+                  </div>
+              </a>
+          </li>
+      </ul>
+  </div>
+    <p class="copyright">
+      &copy; 2024 - <span>2SENTI</span> All Rights Reserved.
+    </p>
+  </main>
+  <div class="lanking">
+    <div class="lankList">
+        <h2>Top 5 Investing</h2>
+        <ul>
+            <div>1 Samsung</div>
+            <div>2 Apple</div>
+            <div>3 Lotte Giants</div>
+            <div>4 KBO</div>
+            <div>5 Android</div>
+        </ul>
+    </div>
+</div>
+
+  <script src="/script.js"></script>
+  <script src="/nav.js"></script>
+</body>
+
+</html>
